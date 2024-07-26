@@ -8,7 +8,6 @@ public class MergeSort {
         int[] t1 = new int[]{5,1,1,2,0,0};
         mergeSort(t1,0, t1.length-1);
         System.out.println(Arrays.toString(t1));
-
     }
 
 
