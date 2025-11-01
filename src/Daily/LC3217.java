@@ -1,8 +1,6 @@
 package Daily;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class LC3217 {
 
@@ -19,6 +17,44 @@ public class LC3217 {
     public static void main(String[] args) {
 
     }
+
+
+    // ================================================================
+    // Revision - 01/11/25
+
+    public ListNode modifiedListR(int[] nums, ListNode head) {
+      HashSet<Integer> set = new HashSet<>();
+      for(int i=0;i<nums.length;i++){
+          set.add(nums[i]);
+      }
+      ListNode dummy = new ListNode(-1);
+      dummy.next = head;
+      ListNode prev=dummy;
+      ListNode cur=head;
+
+      while(cur!=null){
+          if(set.contains(cur.val)){
+              //Removing the current element.
+              prev.next = cur.next;
+              cur = prev.next;
+          }
+          else{
+              cur = cur.next;
+              prev = prev.next;
+          }
+      }
+      return dummy.next;
+    }
+
+
+
+
+
+
+    // ================================================================
+
+
+
 
     public ListNode modifiedList(int[] nums, ListNode head) {
         Set<Integer> set = new HashSet<>();
