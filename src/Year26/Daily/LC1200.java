@@ -1,8 +1,7 @@
-package Daily;
+package Year26.Daily;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.HashMap;
 import java.util.List;
 
 public class LC1200 {
