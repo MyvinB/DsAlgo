@@ -1,4 +1,4 @@
-package Year26.Daily;
+package Topics.Arrays;
 
 import javax.swing.*;
 import java.util.ArrayList;

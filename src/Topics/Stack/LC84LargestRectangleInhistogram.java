@@ -1,4 +1,4 @@
-package Year26.Topic.Stack;
+package Topics.Stack;
 
 import java.util.Stack;
 
