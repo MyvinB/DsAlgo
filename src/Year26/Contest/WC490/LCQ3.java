@@ -1,48 +1,37 @@
 package Year26.Contest.WC490;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.List;
+import java.util.*;
 
 public class LCQ3 {
 
     public static void main(String[] args) {
+        System.out.println(maximumXor("0101","1001"));
 
     }
 
-    public String maximumXor(String s, String t) {
-        List<Integer> oneList = new ArrayList<>();
-        List<Integer> zeroList = new ArrayList<>();
-        int n = s.length();
-        for(int i=0;i<n;i++){
-            if(s.charAt(i) == t.charAt(i)){
-                if(s.charAt(i)=='0'){
-                    zeroList.add(i);
-                } else{
-                    oneList.add(i);
-                }
-            }
+    public static String maximumXor(String s, String t){
+        int zeroCount = 0;
+        int oneCount = 0;
+        for(int i=0;i<t.length();i++){
+            if(t.charAt(i)=='0') zeroCount++;
+            else oneCount++;
         }
-        char[] arr = t.toCharArray();
-        Collections.sort(oneList);
-        Collections.sort(zeroList);
         StringBuilder sb = new StringBuilder();
-        for(int i=0;i<n;i++){
-            if(s.charAt(i)!=arr[i]){
-                sb.append(s.charAt(i));
-            }else{
-                if(arr[i]==0){
-                    if(!oneList.isEmpty()){
-                        int val = oneList.get(0);
-                        arr[i] = 1;
-                        arr[i] = 0;
-                        oneList.remove(i);
-
-                    }
-                }
+        for(int i=0;i<s.length();i++){
+            if(s.charAt(i)=='0' && oneCount>0){
+                --oneCount;
+                sb.append("1");
+            } else if(s.charAt(i)=='1' && zeroCount>0){
+                --zeroCount;
+                sb.append("1");
+            } else if(oneCount>0){
+                --oneCount;
+                sb.append("0");
+            } else if(zeroCount>0){
+                --zeroCount;
+                sb.append("0");
             }
         }
-        return null;
+        return sb.toString();
     }
 }

@@ -15,12 +15,12 @@ public class LC1022 {
         System.out.println(sumRootToLeaf(t));
     }
 
-    public int sumRootToLeaf(TreeNode root) {
+    public static int sumRootToLeaf(TreeNode root) {
 
         return dfs(root,0);
     }
 
-    public int dfs(TreeNode root,int val){
+    public static int dfs(TreeNode root,int val){
         if(root==null)return 0;
         val =val<<1 |root.val;
         int left = dfs(root.left,val);
