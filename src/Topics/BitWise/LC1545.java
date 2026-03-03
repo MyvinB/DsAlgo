@@ -7,7 +7,7 @@ public class LC1545 {
 
 
     public static void main(String[] args) {
-        System.out.println(findKthBit(4,11));
+        System.out.println(findKthBitOptimised(4,11));
     }
 
     public static char findKthBit(int n, int k) {
@@ -32,4 +32,18 @@ public class LC1545 {
         }
         return sb.reverse().toString();
     }
+
+    public static char findKthBitOptimised(int n, int k) {
+        if(n==1) return '0';
+        int len = (1<<n)-1;
+        if(k<Math.ceil(len/2.0)){
+            return findKthBitOptimised(n-1,k);
+        } else if (k==Math.ceil(len/2.0)) {
+            return '1';
+        } else{
+            char ch  = findKthBitOptimised(n-1,len-(k-1));
+            return ch=='0'?'1':'0';
+        }
+    }
+
 }
