@@ -5,7 +5,7 @@ import java.util.*;
 public class LC1878 {
 
     public static void main(String[] args) {
-`
+
     }
 
     public int[] getBiggestThree(int[][] grid) {
@@ -21,7 +21,7 @@ public class LC1878 {
                         sum+= grid[i-k+d][j+d]; //top -> right -> b diagonal both x and y increase
                         sum+=grid[i+d][j+k-d]; //right->bottom
                         sum+=grid[i+k-d][j-d]; //bottom -> left
-                        sum+=grid[i-d][j-k+d];
+                        sum+=grid[i-d][j-k+d]; //Left to top 
                     }
                     set.add(sum);
                 }
