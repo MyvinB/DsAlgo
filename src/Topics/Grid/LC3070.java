@@ -1,4 +1,4 @@
-package Topics.Arrays;
+package Topics.Grid;
 
 public class LC3070 {
 
