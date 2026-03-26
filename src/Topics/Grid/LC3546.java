@@ -10,7 +10,7 @@ public class LC3546 {
         System.out.println(canPartitionGrid(t));
     }
 
-    public boolean canPartitionGrid(int[][] grid) {
+    public static boolean canPartitionGrid(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;
         long sum = 0;
