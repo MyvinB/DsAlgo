@@ -42,7 +42,7 @@ public class LC2751 {
                     }else if(healths[topIdx]>healths[idx]){
                         healths[topIdx] -=1;
                         healths[idx] = 0;
-                        stack.push(idx);
+                        stack.push(topIdx);
                     }else{
                         healths[idx] = 0;
                         healths[topIdx] = 0;
