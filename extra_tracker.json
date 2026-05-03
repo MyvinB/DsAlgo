@@ -19,6 +19,16 @@
       "consecutive_1s": 0,
       "last_interval": 1,
       "date_added": "2026-05-02"
+    },
+    {
+      "lc": 796,
+      "title": "Rotate String",
+      "topic": "String",
+      "diff": "E",
+      "status": "done",
+      "rating": 2,
+      "next_review": null,
+      "date_added": "2026-05-03"
     }
   ]
 }
