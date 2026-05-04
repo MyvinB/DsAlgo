@@ -99,9 +99,9 @@
       "topic": "Arrays",
       "diff": "M",
       "list": "both",
-      "status": "pending",
-      "rating": null,
-      "reviews": [],
+      "status": "done",
+      "rating": 2,
+      "reviews": ["2026-05-04"],
       "next_review": null,
       "day": 2
     },
