@@ -555,10 +555,11 @@
       "topic": "Linked List",
       "diff": "M",
       "list": "striver",
-      "status": "pending",
-      "rating": null,
-      "reviews": [],
-      "next_review": null,
+      "status": "done",
+      "rating": 3,
+      "reviews": ["2026-05-05"],
+      "next_review": "2026-05-06",
+      "last_interval": 1,
       "day": 9
     },
     {
