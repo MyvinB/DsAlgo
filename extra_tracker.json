@@ -1,0 +1,34 @@
+{
+  "meta": {
+    "description": "Extra problems outside Blind75/Striver. Same SR rules as blind75_tracker.",
+    "start_date": "2026-05-02"
+  },
+  "problems": [
+    {
+      "lc": 788,
+      "title": "Rotated Digits",
+      "topic": "Math/DP",
+      "diff": "M",
+      "source": "daily",
+      "pattern": "digit DP / brute force with valid digit mapping",
+      "status": "done",
+      "rating": 4,
+      "reviews": ["2026-05-02"],
+      "next_review": "2026-05-03",
+      "review_count": 0,
+      "consecutive_1s": 0,
+      "last_interval": 1,
+      "date_added": "2026-05-02"
+    },
+    {
+      "lc": 796,
+      "title": "Rotate String",
+      "topic": "String",
+      "diff": "E",
+      "status": "done",
+      "rating": 2,
+      "next_review": null,
+      "date_added": "2026-05-03"
+    }
+  ]
+}
